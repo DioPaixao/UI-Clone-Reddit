@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a,li,ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    background-color: #dae0e6;
+}
+
+.menu-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 3%;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.menu-search img{
+    cursor: pointer;
+}
+
+.search{
+    width: 600px;
+    height: 36px;
+    padding: 0 15px;
+
+    border: 1px solid #edeff1;
+    border-radius: 4px;
+    transition: linear;
+
+    background-color: #f6f7f8;
+}
+
+.search:hover{
+    border-color: #0079d3;
+    background-color: white;
+}
+
+/* BOTAO */
+
+.botao-login{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px 36px;
+    border-radius: 20px;
+    border: 1px solid #0079d3;
+    color: #0079d3;
+    margin-right: 10px;
+    transition: linear;
+    background-color: white;
+}
+
+.botao-login:hover{
+    background-color: #f6f7f8;
+}
+
+.botao-sing-in{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px 30px;
+    border-radius: 20px;
+    border: 1px solid #0079d3;
+    background-color: #0079d3;
+    color: white;
+    transition: linear;
+}
+
+.botao-sing-in:hover{
+    background-color: #0881dd;
+}
+
+/* ESPAÇO */
+
+.space{
+    width: 100%;
+    height: 60px;
+}
+
+
+/* TRENDING */
+
+.trending{
+    margin: 0 10%;
+}
+
+.trending .container{
+    padding: 16px 3%;
+}
+
+.trending .titulo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #1a1a1b;
+}
+
+.trending-news{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+}
+
+.news{
+    cursor: pointer;
+    width: 238px;
+    height: 185px;
+    border-radius: 7px;
+    background-image: url("imagens/news-back.jpg");
+}
+
+.news:nth-of-type(2){
+    background-image: url("imagens/trump.jpg");
+}
+
+.news:nth-of-type(3){
+    background-image: url("imagens/corona.jpg");
+}
+
+.news:nth-of-type(4){
+    background-image: url("imagens/marvel.jpg");
+}
+
+.news .text-news{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),black);
+    border-radius: 7px;
+}
+
+.news h2{
+    font-size: 18px;
+    padding: 100px 5px 0;
+    color: white;
+}
+
+.news p{
+    font-size: 14px;
+    padding: 3px 5px;
+    text-align: left;
+    color: white;
+}
+
+/* MAIN */
+
+/* Popular posts */
+
+.main{
+    margin: 0 10%;
+}
+
+.popular-container{
+    float: left;
+    padding: 5px 3%;
+}
+
+.popular h2{
+    font-size: 14px;
+    color: #1a1a1b;
+}
+
+.container__popular__posts{
+    width: 630px;
+    height: 56px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.container__popular__posts .hot{
+    color: #037ad3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container__popular__posts a{
+    color: #929597;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+
+.container__popular__posts a:hover{
+    background-color: #e5e6e7;
+}
+
+.container__popular__posts select{
+    border: none;
+}
+
+.container__popular__posts select:nth-of-type(1){
+    color: #0079d3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container__popular__posts select option{
+    color: #878A8C;
+}
+
+/* ASIDE */
+
+.aside{
+    float: right;
+    width: 310px;
+    margin: 30px 3% 30px 0;
+}
+
+.sidebar .sidebar-titulo{
+    height: 80px;
+    background-image: url("imagens/marvel.jpg");
+}
+
+.sidebar-titulo h2{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 50px;
+
+    background: linear-gradient(rgba(0,0,0,0.1),black);
+    height: 100%;
+}
+
+.sidebar-ranking{
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+.sidebar-ranking li{
+    padding: 15px 0;
+    border: 1px solid #edeff1;
+}
+
+.sidebar-ranking li:last-of-type{
+    border-bottom: none;
+}
+
+.sidebar-ranking li a{
+    color: black;
+    font-size: 14px;
+    padding: 0px 5%;
+}
+
+.sidebar-ranking .botao-view a button{
+    width: calc(310px - 10%);
+    padding: 10px 0 10px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 5%;
+
+    background-color:#0881dd;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sidebar-ranking .botao-view a button:hover{
+    background-color: #268cd9;
+}
+
+.sidebar-ranking-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.sidebar-ranking-footer a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #037ad3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sidebar-ranking-footer a:hover{
+    background-color: #dbe8f3;
+}
+
+/* FEED */
+
+.feed{
+    float: left;
+    width: 630px;
+    margin: 20px 0 20px 3%;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feed:hover{
+    border: 1px solid #898989;
+}
+
+.feed-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 10px 5%;
+}
+
+.feed-header a{
+    color: black;
+    font-size: 13px;
+}
+
+.feed-header p{
+    margin-left: 10px;
+    color: #787c7e;
+    font-size: 13px;
+}
+
+.feed-header button{
+    margin-left: auto;
+
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color:#0881dd;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feed-header button:hover{
+    background-color: #268cd9;
+}
+/*
+.feed-post .imagem{
+    width: 598px;
+    height: 511px;
+}
+*/
+
+.feed-post{
+    padding: 0 5%;
+}
+
+.feed-post h2{
+    font-size: 18px;
+}
+
+.feed-post .imagem img{
+    width: 410px;
+    height: 512px; 
+    margin: 8px 15%; 
+}
+
+.feed-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 7px 5%;
+}
+
+.feed-footer a{
+    color: #929596;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 10px 20px;
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+
+.feed-footer a:hover{
+    background-color: #e8e8e8;
+}
+
+.feed-footer a:first-child{
+    margin-left: 0;
+}
